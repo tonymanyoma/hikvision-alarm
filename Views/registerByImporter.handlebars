@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style type="text/css">
+            body {
+                font-family: 'Poppins', Helvetica, Arial, sans-serif;
+                padding: 40px 12px 30px 12px;
+            }
+            h2, p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                color: #000;
+            }
+            td {
+                border: none !important;
+                padding: 0px !important;
+            }
+            @media screen and (max-width: 900px) {
+                body{
+                    padding: 40px 12px 30px 12px !important;
+                    margin: 0px !important;
+                }
+            }
+            
+            @media screen and (max-width: 900px) {
+                .info_qr, .contact_us, .fuseaccess, .platform{
+                    width: 100%;
+                } 
+            }
+            .header{
+                height: 114px;
+                background-color: #FFFFFF;
+                padding: 0px 25px;
+            }
+            .invitation__location{
+                background-image: url(https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/check_bg_blue.png);
+                background-repeat: no-repeat !important;
+                background-size: cover;
+                background-position-x: center !important;
+                /*height: 380px;*/
+                width: 100% !important;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 10px;
+            }
+            .invitation__location--text{
+                height: 31px;
+                text-align: center;
+                font: normal normal normal 18px/27px 'Poppins', Helvetica, Arial, sans-serif;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                position: relative;
+                /*max-width: 90%;*/
+            }
+           
+            
+            .invitation__start_time{
+                max-height: 60px;
+                border: 3px solid #1EC66D;
+                border-radius: 5px;
+                padding: 15px 35px;
+                text-align: center;
+                font: normal normal 500 22px/33px 'Poppins', Helvetica, Arial, sans-serif !important;
+                letter-spacing: 0px;
+                color: #000000;
+            }
+            .start_time__title{
+                margin-bottom: 6px;
+            }
+            .instructions{
+                padding: 40px 0px;
+                text-align: center;
+                font: normal normal normal 18px/27px 'Poppins', Helvetica, Arial, sans-serif;
+                letter-spacing: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 74px;
+                padding-right: 74px;
+            }
+            .info_qr{
+                max-width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                
+            }
+            .info_qr__text{
+                padding-right: 80px;
+                padding-left: 80px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+            
+            .platform{
+                width: 600px;
+                /*height: 120px;*/
+                border-radius: 10px;
+                overflow: hidden;
+                margin:  0 auto;
+                background-color: #FFFFFF;
+                padding: 20px 0px 30px 0px;
+                
+            }
+            
+            .platform p{
+                height: 20px;
+                text-align: center;
+                font: normal normal bold 14px/21px 'Poppins', Helvetica, Arial, sans-serif;
+                letter-spacing: 0px;
+                color: #000000;
+                margin-bottom: 10px;
+            }
+
+            .platform__apps .app_download{
+                margin-right: 15px;
+                margin-left: 15px;
+                text-decoration: none;
+            }
+
+            .social{
+                width: 600px;
+                border-radius: 10px;
+                overflow: hidden;
+                margin:  0 auto;
+            }
+            .social .social_link{
+                margin-left: 18.5px;
+                margin-right: 18.5px;
+                text-decoration: none;
+            }
+
+            @media screen and (max-width: 900px) {
+                .platform__apps{
+                    max-width: 100% !important;
+                    display: block;
+                }
+                .platform, .content{
+                    max-width: 100% !important;
+                }
+                .app_download{
+                    margin-bottom: 20px;
+                    height: 40px;
+                    display: block;
+                }
+               
+            }
+
+
+            @media screen and (max-width: 900px) {
+                .header{
+                    padding: 0px 17px;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                .invitation__start_time{
+                    font: normal normal 500 18px/27px 'Poppins', Helvetica, Arial, sans-serif !important;
+                    padding: 15px 15px !important;
+                }
+                .invitation__location{
+                    padding: 33px 18px;
+                    padding-bottom: 0px;
+                    max-width: 91%;
+                    height: 200px !important;
+                    background-size: cover !important;
+                    background-image: url(https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/check_bg_blue_small.png) !important;
+                }
+                .location__name{
+                    width: 340px;
+                }
+                .invitation__location--text{
+                    font: normal normal normal 18px/33px 'Poppins', Helvetica, Arial, sans-serif;
+                }
+                .instructions{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+                .social{
+                    width: 100% !important;
+                }
+                
+                .invitation__location--title{
+                    margin-top: 56px !important;
+                    font: normal normal normal 30px/60px 'Poppins', Helvetica, Arial, sans-serif !important;
+                }
+                .platform{
+                    height: 210px !important;
+                }
+                .header{
+                    display: none !important;
+                }
+                .header_small{
+                    display: block !important;
+                    padding-top: 34px;
+                    padding-bottom: 30px;
+                }
+                .credentials_content{
+                    height: 103px !important;
+                }
+                .credentials{
+                    display: block;
+                    width: 320px !important;
+                    margin-top: -40px !important;
+                }
+                .btn_register{
+                    width: 91% !important;
+                }
+                .link_contain{
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    padding-top: 34px;
+                }
+                .link__title{
+                    width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+            .gt a {
+                color: #fff !important;
+                text-decoration: none !important;
+            }
+        </style>
+   </head>
+   <body style="background-color: #EBEDF0;font-family: 'Poppins', Helvetica, Arial, sans-serif !important; padding: 40px 12px 30px 12px;">
+        <table style="height: 1px; width: 10%; background-color: #EBEDF0;"></table>
+        <div 
+            class="content" 
+            style="width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin:  0 auto;
+            background-color: #FFFFFF;
+            "
+        >
+            <table class="header" style="width: 100%;height: 114px; background-color: #FFFFFF; padding: 0px 25px; padding: 0px 17px;">
+                <tr>
+                    <td>
+                        <img 
+                            src="{{company_logo}}"
+                            class="header__img"
+                        >
+                    </td>
+                    <td>
+                        <img 
+                            src="https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/logo-fa.png" 
+                            class="header__img"
+                            style="float: right;"
+                        >
+                    </td>
+                </tr>
+            </table>
+            <div class="header_small" style="background-color: #FFFFFF; display: none;">
+                <tr>
+                    <td>
+                        <center>
+                        <div style="width: 300px; margin: 0 auto;">
+                            <img 
+                                src="https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/logo-fp.png" 
+                                class="header__img"
+                            >
+                        </div>
+                            
+                        </center>
+                    </td>
+                </tr>
+            </div>
+            
+            <div 
+                class="invitation__location"
+                style="height: 230px;"
+            >
+                <p 
+                    class="invitation__location--title"
+                    style="height: 56px;
+                    text-align: center;
+                    font: normal normal normal 40px/60px 'Poppins', Helvetica, Arial, sans-serif;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    margin-top: 130px;
+                    margin-bottom: 8px;"
+                >¡Felicidades!</p>
+                <p class="invitation__location--text" style="margin-bottom: 40px;">Te has registrado exitosamente</p>
+                
+               
+            </div>
+
+            <div 
+                style="
+                background-color: #FFFFFF;
+                padding-bottom: 36px;
+                padding-top: 29px;
+                display: block;
+                overflow: hidden;"
+                class="link_contain"
+            >
+                <center>
+                    <p  style="text-align: center;
+                        font: normal normal normal 18px/27px 'Poppins', Helvetica, Arial, sans-serif;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        display: block;"
+                        class="link__title"
+                    >
+                        A continuación te dejamos el link de acceso
+                    </p>
+                </center>
+
+                <center>
+                    <a 
+                    style="width: 340px;
+                    background: #1EC66D 0% 0% no-repeat padding-box;
+                    border-radius: 5px; 
+                    margin: 0 auto;
+                    text-align: center;
+                    font: normal normal 600 22px/33px 'Poppins', Helvetica, Arial, sans-serif;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    padding: 15px;
+                    margin-top: 16px;
+                    display: block;"
+                    class="btn_register"
+                    href="https://backofficestaging.fusepong.com/#/?email='{{email}}'&password='{{rut}}'&company_id='{{company_id}}'"  target="_blank" class="cloudHQ__gmail_elements_final_btn" rel="noopener">Completar registro</a>
+                </center>
+               
+            </div>
+           
+        </div>
+       
+        <div 
+            class="platform"
+            style="width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin:  0 auto;
+            margin-top: 30px;
+            background-color: #FFFFFF;
+            "
+        >
+            <p>Nuestra plataforma está disponible en:</p>
+            <div class="platform__apps">
+                <center>
+                    <a href="https://fuseaccess.com" class="app_download">
+                        <img 
+                            src="https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/website.png"
+                        >
+                    </a>
+                    <a
+                        href="#" 
+                        target="_blank" 
+                        class="app_download"
+                    >
+                        
+                        <img 
+                            src="https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/download-on-the-app-store.png"
+                        >
+                    </a>
+                    <a 
+                        href="#" 
+                        target="_blank" 
+                        class="app_download"
+                    >
+                        <img 
+                            src="https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/download-on-the-google-play.png"
+                        >
+                    </a>
+                </center>
+            </div>
+        </div>
+        
+        <div 
+            class="social"
+            style="margin: 0 auto;
+            margin-top: 40px;
+            width: 600px
+            "
+        >
+            <center>
+                <a href="https://www.facebook.com/fuse.access/" class="social_link">
+                    <img 
+                        src="https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/Icon-facebook.png"
+                    >
+                </a>
+                <a href="https://www.instagram.com/fuse.access/" class="social_link">
+                    <img 
+                        src="https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/Icon-instagram.png"
+                    >
+                </a>
+                <a href="https://www.linkedin.com/showcase/fuseaccess" class="social_link">
+                    <img 
+                        src="https://fusepongsolutions.s3.us-west-2.amazonaws.com/email_assets/Icon-linkedin-in.png"
+                    >
+                </a>
+            </center>
+        </div>
+   </body>
+</html>
